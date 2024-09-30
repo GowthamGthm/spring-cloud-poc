@@ -10,3 +10,12 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+# Zip-Kin
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+#  zipkin:
+#    tracing:
+#      endpoint: http://localhost:9400/api/v2/spans

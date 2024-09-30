@@ -35,12 +35,12 @@ public class OrderService {
         String url = "http://SHIPPING-SERVICE:9092/shipping";
 
 //         Using rest template
-//        ResponseEntity<Order> orderResponseEntity = restTemplate.postForEntity(url, order, Order.class);
-//        return orderResponseEntity.getBody();
+        ResponseEntity<Order> orderResponseEntity = restTemplate.postForEntity(url, order, Order.class);
+        return orderResponseEntity.getBody();
 
 //        USING Open feign client
-        order = shippingClient.postShipping(order);
-        return order;
+//        order = shippingClient.postShipping(order);
+//        return order;
     }
 
 
